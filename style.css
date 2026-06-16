@@ -1,0 +1,117 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f1ea; /* Tom palha claro para o fundo */
+    color: #2c3e24; /* Verde escuro para os textos */
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(rgba(44, 62, 36, 0.8), rgba(44, 62, 36, 0.9)), 
+                url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menu de Navegação */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3b5334; /* Verde Oliva */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-nav {
+    background-color: transparent;
+    border: 2px solid #8eb057;
+    color: #ffffff;
+    padding: 12px 24px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover, .btn-nav.active {
+    background-color: #8eb057; /* Verde folha brilhante */
+    color: #2c3e24;
+    border-color: #8eb057;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Controle de Exibição das Páginas */
+.pagina-secao {
+    display: none; /* Esconde todas as seções por padrão */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #6e473b; /* Detalhe em tom Marrom Terra */
+}
+
+.pagina-secao.active {
+    display: block; /* Mostra apenas a seção ativa */
+    animation: fadeIn 0.5s ease;
+}
+
+.pagina-secao h2 {
+    font-size: 2rem;
+    color: #3b5334;
+    margin-bottom: 15px;
+}
+
+.pagina-secao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Imagens */
+.imagem-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #3b5334;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e24;
+    color: #f4f1ea;
+    margin-top: 40px;
+}
+
+/* Animação suave de transição */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
